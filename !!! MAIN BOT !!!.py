@@ -40,13 +40,13 @@ whitelisted_users_file = open("./usersid.json", "r")
 credentials = service_account.Credentials.from_service_account_file('./excelapi-388705-bb8fd497f3d5.json')
 service = build('sheets', 'v4', credentials=credentials)
 
-spreadsheet_id = '1wkNCHs1kJJbFz3KqVOa0J4efEQsUedx15_CBwJbPPvo'
-spreadsheet_name = 'Mecklenburg'
-sheet_gid = "1765105408"
+spreadsheet_id = 'put id here'
+spreadsheet_name = 'put spreadsheet name here'
+sheet_gid = "put sheet gid" #CAN'T BE 0 OR NONE
 
-search_row_username = "J"
-search_row_rank = "I"
-search_row_attended = "H"
+search_row_username = "row for usernames"
+search_row_rank = "row for ranks"
+search_row_attended = "row for numbers"
 
 search_range_start = 15
 search_range_end = 330
